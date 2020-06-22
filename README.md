@@ -13,3 +13,8 @@ TIL
 - 클래스리스트 add 를 통해 날씨 아이콘 넣음
 - Math.round(~) -> 반올림
 - 200 < x < 300 -> 조건문은 (200 < x && x < 300)
+
+### 20년 6월 22일
+- short url 플젝 시작.
+- 폰트 적용 @font-face{font-famaily:name src:url~format('type')}
+- flex하고 자식에 width 100%주면 나머지 공간 다 먹음
