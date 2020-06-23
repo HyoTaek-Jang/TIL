@@ -18,3 +18,8 @@ TIL
 - short url 플젝 시작.
 - 폰트 적용 @font-face{font-famaily:name src:url~format('type')}
 - flex하고 자식에 width 100%주면 나머지 공간 다 먹음
+
+### 20년 6월 23일
+- 마진이 잘 안먹는다 하면 마진겹침 생각해봐 해결법으로 clearfix::before or after
+- 마진겹칩은 인접한 블럭들끼리, 상하단만 생김. 해결하려면 위에 겹친거에 clearfix해줘야해
+- shorten url project 콘텐츠 부분까지 했음.
