@@ -23,3 +23,8 @@ TIL
 - 마진이 잘 안먹는다 하면 마진겹침 생각해봐 해결법으로 clearfix::before or after
 - 마진겹칩은 인접한 블럭들끼리, 상하단만 생김. 해결하려면 위에 겹친거에 clearfix해줘야해
 - shorten url project 콘텐츠 부분까지 했음.
+
+### 20년 6월 24일
+- 마진은 width height가 있어야 먹음
+- 마진 겹침 부모에 clearfix 먹여서 해결
+- flex로 가로는 정렬이 되는데 세로쪽을 어케 할지 모르겠네 space-between하고 싶은데.
