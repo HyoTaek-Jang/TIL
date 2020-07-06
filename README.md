@@ -38,3 +38,28 @@ TIL
 - 24일에 질문은 flex로 aling-self 했으면 됐을듯 center end 이거로 ㅇㅇ
 - 하튼 반응형이 어렵다. 이번에 플젝 끝나면 할 것들이 바닐라js, 반응형플젝 하나 더, js심화? 이정도하고 넘어가면 될 듯하다. 리액트 도대체 언제해?ㅋㅋㅋㅋ
 - 제이쿼리랑 부트스트랩은 패스한다.
+
+### 20년 7월 6일
+- CSS GRID
+- 메인태그에 디스플레이 그리드 넣어서 적용 (플랙스와 동일)
+- 그럼 칼럼으로 정렬
+- grid-template-columns : 100px 100px -> 2열로 100픽셀씩
+- grid-template-columns : 물론 %도 가능(부모의 width를 받아옴) 1fr : 가득차게
+- 만약 1fr 1fr 1fr로 하면 33%씩 나눠서함
+- grid-template-rows : 위와 동일
+- 단위 vh는 화면 비례 단위
+- 개별로 선택
+    - 개별 선택자에 gird-column-start : 1;
+    - grid-column-end : 3;
+    - -> 1행부터 3행까지 쭈욱
+    - 축약형 -> grid-column : 1/3; row도 동일 
+- grid-template-areas : 개별 선택자에 먼저 gird-area : ~;로 이름을 부여함
+- 그 담에 grid-template-areas: "box1 box2"
+                                "box3 ." .은 공백을 의미
+- justify-items : center -> column 정렬
+- align-items : center -> row 정렬
+- 개별 정렬 -> 개별선택자에 justify-self, align-self : start end center etc
+- grid-template-columns : repeat(3, 300px) -> 300px씩 3줄
+- grid-template-columns : repeat(auto-fill, 300px) -> 300px씩 스크린 크기에 따라 조절
+- grid-template-columns : repeat(auto-fill, minmax(300px, 1fr)) -> 최소 300픽셀로 시작해서 화면이 커지면 1fr까지 커짐 그러다 300픽셀 자리가 나면 한칸이 더 들어가고
+- grid-column-gap : 20px -> 세로로 갭생김
