@@ -82,7 +82,7 @@ TIL
 - undefined는 비교 불가
 
 - ||는 첫 번째 truthy 값을 반환합니다.
-- ??는 값이 정의되어있는 첫 번째 값을 반환합니다
+-  논리병합 연산자 ??는 값이 정의되어있는 첫 번째 값을 반환합니다
 
 - null 병합 연산자 ??를 사용하면 피연산자 중 ‘값이 할당된’ 변수를 빠르게 찾을 수 있습니다.
 
@@ -91,3 +91,33 @@ TIL
 - 괄호 없이 ??를 ||나 &&와 함께 사용하는 것은 금지되어있습니다.
 
 - switch case문에서 비교할땐 ===로 비교가 돼서 자료형까지 맞춰줘야해
+
+- 함수의 주요 용도 중 하나는 중복 코드 피하기입니다. 
+- 함수에선 외부 변수에 접근하는 것뿐만 아니라, 수정도 할 수 있습니다.
+-  전역변수를 사용하지 않거나 최소한으로만 사용합니다.
+
+- 매개변수에 값을 전달하지 않으면 그 값은 undefined가 됩니다.
+- function showMessage(from, text = "no text given") -> 함수 기본값 설정
+- return문이 없거나 return 지시자만 있는 함수는 undefined를 반환합니다.
+- return 끝엔 자동으로 세미콜론 들어감.
+- 함수이름 가이딩 
+
+showMessage(..)     // 메시지를 보여줌
+
+getAge(..)          // 나이를 나타내는 값을 얻고 그 값을 반환함
+
+calcSum(..)         // 합계를 계산하고 그 결과를 반환함
+
+createForm(..)      // form을 생성하고 만들어진 form을 반환함
+
+checkPermission(..) // 승인 여부를 확인하고 true나 false를 반환함
+
+function min(a,b){
+    return (a>b)?b:a;
+}
+
+let double = n => n * 2;
+// let double = function(n) { return n * 2 }과 거의 동일합니다.
+
+alert( double(3) ); // 6
+
