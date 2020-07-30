@@ -116,8 +116,41 @@ function min(a,b){
     return (a>b)?b:a;
 }
 
+
+- 화살표 함수
+
 let double = n => n * 2;
 // let double = function(n) { return n * 2 }과 거의 동일합니다.
 
 alert( double(3) ); // 6
 
+### 20년 7월 30일
+- 대괄호 표기법
+
+let user = {
+  name: "John",
+  age: 30
+};
+
+let key = prompt("사용자의 어떤 정보를 얻고 싶으신가요?", "name");
+
+// 변수로 접근
+alert( user[key] ); // John (프롬프트 창에 "name"을 입력한 경우)
+
+ 그런데 점 표기법은 이런 방식이 불가능합니다.
+
+let user = {
+  name: "John",
+  age: 30
+};
+
+let key = "name";
+alert( user.key ) // undefined
+
+- 객체 복사법
+- 객체 = 객체하면 주소가 공유되어 한쪽을 고치면 나머지도 고쳐져서 값만 옮기려면 Object.assign
+
+// permissions1과 permissions2의 프로퍼티를 user로 복사합니다.
+Object.assign(user, permissions1, permissions2);
+
+// now user = { name: "John", canView: true, canEdit: true }
