@@ -154,3 +154,16 @@ alert( user.key ) // undefined
 Object.assign(user, permissions1, permissions2);
 
 // now user = { name: "John", canView: true, canEdit: true }
+
+### 20년 7월 31일
+
+- new연산자
+함수 이름의 첫 글자는 대문자로 시작합니다.
+반드시 "new" 연산자를 붙여 실행합니다.
+
+- 옵셔널 체이닝
+옵셔널 체이닝 문법 ?.은 세 가지 형태로 사용할 수 있습니다.
+
+obj?.prop – obj가 존재하면 obj.prop을 반환하고, 그렇지 않으면 undefined를 반환함
+obj?.[prop] – obj가 존재하면 obj[prop]을 반환하고, 그렇지 않으면 undefined를 반환함
+obj?.method() – obj가 존재하면 obj.method()를 호출하고, 그렇지 않으면 undefined를 반환함
