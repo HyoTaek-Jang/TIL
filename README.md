@@ -227,3 +227,50 @@ console.log(a);
 ---
 5
 ```
+
+## 21년 1월 24일
+
+### 콜백지옥
+
+- 콜백 체인의 문제점 : 가독성이 떨어짐. 디버깅이 어려워짐. 유지보수도 어려워짐
+
+### 해결법 1 : promise
+
+- 비동기적인 것을 수행할때 콜백대신 유용하게 사용 가능
+- state, producer, comsumer
+- 프로미스가 만들어져서 오퍼레이션을 수행 중 - pending, 성공하면 fulfilled 실패하면 rejected
+- 원하는 기능을 만드는 프로듀서, 소비하는 컨슈머
+- resolve : 성공했을때 콜백, reject 실패시 콜백
+- 시간이 걸리는 네트워크 통신 같은걸 비동기적으로 프로미스를 사용함.
+- 프로미스는 만들어지면 executor가 자동으로 바로 시작됨.
+- resolve랑 reject는 then, catch, finally로 사용가능
+
+```
+const promise = new Promise((resolve, reject) =>{
+  resolve(~)
+  reject(~)
+})
+promise.then(value => {~}); // resolve
+        .catch(rejectValue =>{~})// reject
+        .finally(()=>{~ 무조건 실행})
+```
+
+### promise chaining
+
+- then then then 이런식으로 묶을 수 있음.
+- 댄으로 프로미스를 받을 수도 있음.
+
+### 해결법 2 : async , await
+
+- 얘네는 프로미스를 더 간결하고 동기적으로 실행되는 것처럼 보이게 해줌.
+- 프로미스 체이닝을 간결하게 바꿔줌.
+- 함수 앞에 async 를 쓰면 프로미스 처럼 행동하게 됨 함수가
+- await은 async 선언된 함수 안에서만 사용 가능. 동기적으로 끝날때까지 기다려 시키는거
+- 리졸브는 걍 리턴 때리고, 에러는 throw 시키면 됨.
+- 그리고 트라이 캐치 쓰면 됨.
+- 병렬로 실행하려면, 일단 불러놓고, await 써서 둘다 완료되면 다음게 실행되게
+- 근데 굳이 위처럼 두번 작성하지 않고 promise.all을 사용함
+- Promise.all([promise1(),promise2()]).then(fruits=>fruits.join('+'))
+- 즉 위에 코드는 배열안에 모든 프로미스가 실행되면 결과가 fruits 배열에 담김.
+- Promise.race([~,~]).then((~)=>{~})
+- race는 여러 배열 프로미스 중에서 젤 빠른놈만 가져옴
