@@ -1,41 +1,22 @@
-// const timer = (ms) =>
-//   setTimeout(() => {
-//     Promise.resolve();
-//   }, ms);
-// const timer = (ms) => new Promise((res) => setTimeout(res, ms));
-
+// 1번 timer
 async function timer(ms) {
-  return new Promise((res) => {
-    setTimeout(res, ms);
-  });
+  setTimeout(() => {
+    return Promise.resolve();
+  }, ms);
 }
-// const timer = (ms) =>
-//   new Promise((resolve) => resolve(setTimeout(() => {}, ms)));
-console.log("start");
+
+// 2번 timer
+const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
 async function load() {
   for (var i = 0; i < 3; i++) {
     console.log(i);
     await timer(1000);
-    // await new Promise((res) => {
-    // console.log("timer");
-    // setTimeout(() => {
-    //   console.log("timer middle");
-    //   res();
-    // }, 1000);
-    //   console.log("timer after");
-    // });
   }
   console.log("end");
 }
-console.log("end");
 
 load();
-// async function timer(ms) {
-//   setTimeout(() => {
-//     Promise.resolve();
-//   }, ms);
-// }
 
 // function timer(res) {
 //   return Promise.resolve(setTimeout(() => {}, res)).then(() => undefined);
