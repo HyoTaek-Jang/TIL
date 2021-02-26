@@ -18,5 +18,5 @@
 
 [21년 2월 25일 - [자료구조] 트리, 힙이란](https://velog.io/@hyotaek9812/%EC%9E%90%EB%A3%8C%EA%B5%AC%EC%A1%B0-%ED%8A%B8%EB%A6%AC-%ED%9E%99%EC%9D%B4%EB%9E%80)
 
-[21년 2월 25일 - [알고리즘] 선택, 삽입, 퀵, 계수정렬](https://velog.io/@hyotaek9812/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%84%A0%ED%83%9D-%EC%82%BD%EC%9E%85-%ED%80%B5-%EA%B3%84%EC%88%98%EC%A0%95%EB%A0%AC)
+[21년 2월 26일 - [알고리즘] 선택, 삽입, 퀵, 계수정렬](https://velog.io/@hyotaek9812/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EC%84%A0%ED%83%9D-%EC%82%BD%EC%9E%85-%ED%80%B5-%EA%B3%84%EC%88%98%EC%A0%95%EB%A0%AC)
 
