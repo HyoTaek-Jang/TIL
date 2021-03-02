@@ -25,3 +25,5 @@
 [21년 3월 02일 - [회고록] 개인프로젝트 'Our-To-Do' 회고록](https://velog.io/@hyotaek9812/%ED%9A%8C%EA%B3%A0%EB%A1%9D-%EA%B0%9C%EC%9D%B8%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8-Our-To-Do-%ED%9A%8C%EA%B3%A0%EB%A1%9D)
 
 [21년 3월 02일 - [로그인, 자동로그인 처리] Our-To-Do에 사용된 로그인 기법이랄까..](https://velog.io/@hyotaek9812/%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%9E%90%EB%8F%99%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EC%B2%98%EB%A6%AC-Our-To-Do%EC%97%90-%EC%82%AC%EC%9A%A9%EB%90%9C-%EB%A1%9C%EA%B7%B8%EC%9D%B8-%EA%B8%B0%EB%B2%95%EC%9D%B4%EB%9E%84%EA%B9%8C)
+
+[21년 3월 03일 - [MySQL] IS NULL, LAST_INSERT_ID, AND, JOIN](https://velog.io/@hyotaek9812/MySQL-IS-NULL-LASTINSERTID-AND-JOIN)
