@@ -33,3 +33,8 @@
 [21년 3월 11일 - [프로그래머스 level2] 카펫](https://velog.io/@hyotaek9812/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-level2-%EC%B9%B4%ED%8E%AB)
 
 [21년 3월 11일 - [프로그래머스 level2] H-Index](https://velog.io/@hyotaek9812/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-level2-H-index)
+
+[21년 3월 11일 - [프로그래머스 level2] H-Index](https://velog.io/@hyotaek9812/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-level2-H-index)
+
+[21년 3월 13일 - [리눅스 커널 리스트헤드, C] 과제를 통해 배운점](https://velog.io/@hyotaek9812/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%84%90-%EB%A6%AC%EC%8A%A4%ED%8A%B8%ED%97%A4%EB%93%9C-C-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EA%B3%BC%EC%A0%9C%EB%A5%BC-%ED%86%B5%ED%95%B4-%EB%B0%B0%EC%9A%B4%EC%A0%90)
+
