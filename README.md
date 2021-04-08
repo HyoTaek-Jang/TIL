@@ -43,3 +43,7 @@
 [21년 3월 18일 - [프로그래머스 level1] 실패율](https://velog.io/@hyotaek9812/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-level1-%EC%8B%A4%ED%8C%A8%EC%9C%A8)
 
 [21년 3월 20일 - [Spring] TDD와 테스트코드](https://velog.io/@hyotaek9812/Spring-TDD%EC%99%80-%ED%85%8C%EC%8A%A4%ED%8A%B8%EC%BD%94%EB%93%9C)
+
+### 21년 4월
+
+[21년 4월 08일 - [프로그래머스 Level2] 오픈채팅방](https://velog.io/@hyotaek9812/%ED%94%84%EB%A1%9C%EA%B7%B8%EB%9E%98%EB%A8%B8%EC%8A%A4-Level2-%EC%98%A4%ED%94%88%EC%B1%84%ED%8C%85%EB%B0%A9)
