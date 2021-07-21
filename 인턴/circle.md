@@ -233,3 +233,102 @@ ci/cd??
 ### 0715
 
 0. ec2 메이븐 빌드법 [블로그](https://miniminis.github.io/2019/10/13/spring/springboot-deploy/)
+1. 소켓 특정 사람에게 보내기 [블로그](https://rimkongs.tistory.com/38)
+2. 소켓 채팅방 [블로그](https://donghunee.github.io/study/2019/12/17/socket2/)
+3. 소켓 특정사람 및 네임스페이스 등 정보 [블로그](https://www.zerocho.com/category/NodeJS/post/57edfcf481d46f0015d3f0cd)
+
+### 0719
+
+0. 스웨거 ui yaml[블로그](https://machine-geon.tistory.com/168)[블로그2](https://real-dongsoo7.tistory.com/58)
+1. 회사 소개 기획 질문.... 게시판 형태라매.... 왜 달라요ㅠㅠ 회사별로 각자의 게시판 있는거 아니였어요...?
+2. 컨텍어스 정보 수정 도메인 ㅇㅇ dto
+3. 공지사항 : 조회수, 첨부파일
+4. 전자정부 뭘 어케 봐야함
+5. 남들한테 알려주는게 좋다!!! 맨날 도움만 받아서 그런가? 이제 여기저기 내가 도움을 줄 수 있는게 너무 좋다. 솔직히 그냥 에러 잡아달라하면 좀 그런데, 내가 알려주면서 그 사람도 열심히하고 노력하는걸 보면 에러 잡아주고 왜 떳는지 설명해주는게 좋다!! 나도 누군가한테 알려주다니 좋다!
+
+### 0720
+
+0. 웨비나 tdd 학습. 복습 요망
+
+```
+사이트 네이밍 : GCC
+수출상담회 수동 매칭
+
+---
+
+리뷰
+1. ec2 rds s3 연결 완료
+2. 글로벌 수출 상담회 기능 구현 완료 (테스트 코드 미작성)
+3. 기존 코드 QA하고, 어제 제플린 확인하고, api 수정 필요해서 다시 api 명세부터 재작성
+
+
+질문:
+
+0. 이미 백앤드 구축 거의 다 됐는데 전자정부프레임워크가 꼭 필요할까? 왜 필요한가
+
+1. 회사 및 사업소개
+게시판 아닌가여...
+브로슈어 pdf 업로드
+동영상 유튜브 링크
+
+업로드는 어케행 -> 수정하십셔^^^!!!
+
+그냥 회사 및 사업소개에 어떤 기능이 필요한거야... 일단 기존엔 게시판 형태로 만들었음.
+
+2. 공지사항
+조회수랑 첨부파일 핸들링만 바꾸면 될듯
+
+3. 컨텍어스
+도메인 수정 ㅇㅇ
+이거도 게시판 형태가 아님?
+답변은 어케 줌? 메일?
+-> 비회원 컨텍어스 : 비밀번호 추가해서
+
+jsp 연결 포멧 어케함
+
+```
+
+- 할일
+  1. 제플린 확인해서, api 재구성
+  2. 회사 및 사업소개, 공지사항, 컨텍어스
+  3. 프론트 전송 포맷을 어케 맞춰야함?
+  4. 전체적인 QA
+
+2. swagger 설명 달기 [블로그](https://hyeran-story.tistory.com/73)
+
+### 0721
+
+0. 노티스 첨부파일 추가 ㅇㅇ -> ok
+1. 컨텍어스 비회원 어케 할지 고민.
+2. info 하드코딩? 아니면 다 api, 테이블 만들어?
+
+3.
+
+```
+추가 noticeController
+
+    @PostMapping("/file")
+    public NoticeFile addFileWithNotice(@RequestBody AddFileWithNoticeDto addFileWithNoticeDto) {
+        Notice curNotice = noticeService.noticeSelectById(addFileWithNoticeDto.getNoticeId()).orElse(null);
+        NoticeFile noticeFile = addFileWithNoticeDto.toEntity(curNotice);
+
+        return noticeFileService.addNoticeFile(noticeFile);
+    }
+
+        @PostMapping("/file/{noticeId}")
+    public List<NoticeFile> getFiles(@PathVariable Long noticeId) {
+        Notice curNotice = noticeService.noticeSelectById(noticeId).orElse(null);
+
+        return noticeFileService.getNoticeFile(curNotice);
+    }
+```
+
+0. 비회원 질문 남기기 -> 패스워드 암호화 -> ok 완료
+1. 이메일로 컨텍어스 검색 -> ok
+2. 비회원 읽을 때 비밀번호 받고 검증 - ok
+3. 카테고리 추가 - ok
+4. 환경변수를 통한 테스트, 디벨롭, 프로덕션 환경 구별?[블로그](https://devhyun.com/blog/post/23)
+
+### 0722
+
+회사소개 개발, 나머지 테스트 코드 작성
