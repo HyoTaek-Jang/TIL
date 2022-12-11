@@ -235,3 +235,6 @@ ID  NAME  	PROHIBITION_ID
         prohibition.getSynonyms().add(this);
     }
 ```
+
+- mappedby가 없어도 잘 동작하던데 이유가 뭘까 -> 1ㄷ1에선 주인이 누군지 알아야 fk가 하나만 생기는데 1ㄷn nㄷ1에선 주인관계가 명확해서 그런가?
+- mappedby 없을 때 테이블이 3개 생기는 이유는 무엇일까?
